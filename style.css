@@ -1,0 +1,31 @@
+div{
+	width: 40vw;
+	height: 50vh;
+	color: white;
+	background: blueviolet;
+	margin: 30vh 0vw 0vh 30vw;
+	border: 5px solid gray;
+
+}
+h1{
+	font: 900 30px fantasy;
+	margin: 0vh 0vw 7vh 2vw ;
+
+}
+h5{
+	font: 700 18px fantasy;
+	display: inline-flex;
+	margin: 0vh 0vw 2vh 2vw ;
+}
+input{
+	border: 2px solid gray;
+	background: white;
+	margin: 0vh 0vw 7vh 2vw;
+	
+	width: 12vw;
+	height: 5vh;
+}
+button{
+	padding: 1.2vh 2vw 1.2vh 2vw;
+	background: white;
+}

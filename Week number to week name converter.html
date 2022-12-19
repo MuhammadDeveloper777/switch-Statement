@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week number to week name converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<h1>Week number to week name converter</h1>
+		<h5>Enter numberWeek:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+		<input type="text" id="weekNumber">
+		<button id="btn1" onclick="weekConverter()">Conevrt</button>
+		<br/>
+		<h5>Convert to nameWeek:</h5>
+		<input type="text" id="result">
+	</div>
+	<script type="text/javascript">
+		function weekConverter()
+		{
+			let w=weekNumber.value;
+			w=Number(w);
+			switch(w)
+			{
+				case 1:
+					result.value='Week1';
+					break;
+				case 2:
+					result.value='Week2';
+					break;
+				case 3:
+					result.value='Week3';
+					break;
+				case 4:
+					result.value='Week4';
+					break;
+				case 5:
+					result.value='Week5';
+					break;
+				default:
+					result.value='Empty this Cell';
+
+			}
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Write Month name to Month number converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<h1>Write Month name to Month number converter</h1>
+		<h5>Enter Month Name:&emsp;&nbsp;</h5>
+		<input type="text" id="monthName">
+		<button id="btn1" onclick="monthConverter()">Convert</button>
+		<br/>
+		<h5>Convert MonthNmber:</h5>
+		<input type="text" id="result">
+	</div>
+
+	<script type="text/javascript">
+		function monthConverter()
+		{
+			let m=monthName.value;
+			switch(m)
+			{
+				case `January`:
+					result.value=1;
+					break;
+
+				case `Febrary`:
+					result.value=2;
+					break;
+
+				case `March`:
+					result.value=3;
+					break;
+
+				case `April`:
+					result.value=4;
+					break;
+
+				case `May`:
+					result.value=5;
+					break;
+				default:
+						result.value="No Translation Found.";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Write Week Day name to Week day Number Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<h1>Write Week Day name to Week day Number Converter</h1>
+			<h5>Enter day Name:</h5>
+				<input type="text" id="dayName">
+
+				<button id="btn1" Onclick="dayConverter()">Convert</button>
+				<br/>
+
+				<h5>Translation:&emsp;&emsp;&nbsp;</h5>
+				<input type="text" id="result">
+	</div>
+	<script type="text/javascript">
+	//Write Week Day name to Week day Number Converter	
+		function dayConverter() 
+		{
+			let d=dayName.value;
+			
+			switch(d)
+			{
+				case "monday":
+							result.value=1;
+							break;
+
+				case "thuesday":
+							result.value=2;
+							break;
+
+				case "wednesday":
+							result.value=3;
+							break;
+
+				case "thusday":
+							result.value=4;
+							break;
+
+				case "friday":
+							result.value=5;
+							break;
+
+				case "saturday":
+							result.value=6;
+							break;
+
+				case "sun":
+							result.value=7;
+							break;
+
+				default:
+					result.value="No Translation Found.";
+
+			}
+		}
+	</script>
+</body>
+</html>
